@@ -9,6 +9,17 @@ pipeline {
                 echo 'Hello World!!'
             }
         }
+	    
+	stage('Start') {
+            steps {
+                ls -lrt
+		`date`
+		pwd
+		docker -version
+		java -version
+            }
+        }
+
 
         stage('Build') {
             steps {
