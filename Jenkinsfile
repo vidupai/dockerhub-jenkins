@@ -12,11 +12,11 @@ pipeline {
 	    
 	stage('Start') {
             steps {
-                ls -lrt
-		date
-		pwd
-		docker -version
-		java -version
+                sh 'ls -lrt'
+		sh 'date'
+		sh 'pwd'
+		sh 'docker -version'
+		sh 'java -version'
             }
         }
 
