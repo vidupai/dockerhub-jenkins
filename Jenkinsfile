@@ -1,7 +1,5 @@
 pipeline {
-	agent{
-		dockerfile true
-	}
+	agent any
 	environment {
 	DOCKERHUB_CREDENTIALS = credentials('vidupai-dockerhub')
 	}
