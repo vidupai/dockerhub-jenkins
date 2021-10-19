@@ -1,6 +1,6 @@
 pipeline {
 	agent{
-		label 'Built-In Node'
+		dockerfile true
 	}
 	environment {
 	DOCKERHUB_CREDENTIALS = credentials('vidupai-dockerhub')
