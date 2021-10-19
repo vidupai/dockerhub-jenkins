@@ -13,7 +13,7 @@ pipeline {
 	stage('Start') {
             steps {
                 ls -lrt
-		`date`
+		date
 		pwd
 		docker -version
 		java -version
