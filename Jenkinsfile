@@ -4,6 +4,12 @@ pipeline {
 	DOCKERHUB_CREDENTIALS = credentials('vidupai-dockerhub')
 	}
     stages {
+	stage('Example') {
+            steps {
+                echo 'Hello World!!'
+            }
+        }
+
         stage('Build') {
             steps {
                 sh 'docker build -t vidupai/vidupai2012:latestlocal .'
